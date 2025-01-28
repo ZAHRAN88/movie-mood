@@ -5,7 +5,18 @@ const moodToGenres: { [key: string]: number[] } = {
     anxious: [53, 9648],       
     romantic: [10749],       
     angry: [28, 80],           
-    nostalgic: [36, 10752]     
+    nostalgic: [36, 10752],     
+    inspired: [99, 36, 10752], 
+    adventurous: [12, 37, 14], 
+    relaxed: [35, 10751, 16],  
+    mysterious: [9648, 27, 53], 
+    thoughtful: [878, 18, 99],  
+    hopeful: [10751, 14, 12],  
+    melancholic: [18, 10749, 36], 
+    energetic: [28, 12, 35],    
+    scared: [27, 53, 9648],     
+    peaceful: [99, 10751, 16],  
+    curious: [878, 9648, 14]    
   };
   
   const ACCESS_TOKEN = process.env.TMDB_ACCESS_TOKEN;

@@ -5,7 +5,25 @@ import { useEffect, useState } from 'react';
 import { Loader2 } from 'lucide-react';
 import Link from 'next/link';
 
-export type Mood = 'happy' | 'sad' | 'excited' | 'anxious' | 'romantic' | 'angry' | 'nostalgic';
+export type Mood = 
+  | 'happy' 
+  | 'sad' 
+  | 'excited' 
+  | 'anxious' 
+  | 'romantic' 
+  | 'angry' 
+  | 'nostalgic'
+  | 'inspired'
+  | 'adventurous'
+  | 'relaxed'
+  | 'mysterious'
+  | 'thoughtful'
+  | 'hopeful'
+  | 'melancholic'
+  | 'energetic'
+  | 'scared'
+  | 'peaceful'
+  | 'curious';
 
 interface Movie {
   id: number;
@@ -24,7 +42,18 @@ const moodColors = {
   anxious: 'from-green-400 to-teal-500',
   romantic: 'from-pink-400 to-red-500',
   angry: 'from-red-500 to-orange-600',
-  nostalgic: 'from-indigo-400 to-purple-500'
+  nostalgic: 'from-indigo-400 to-purple-500',
+  inspired: 'from-blue-500 to-indigo-600',
+  adventurous: 'from-amber-400 to-orange-600',
+  relaxed: 'from-teal-400 to-cyan-600',
+  mysterious: 'from-violet-500 to-purple-700',
+  thoughtful: 'from-slate-400 to-slate-600',
+  hopeful: 'from-sky-400 to-blue-600',
+  melancholic: 'from-neutral-400 to-neutral-600',
+  energetic: 'from-rose-400 to-pink-600',
+  scared: 'from-stone-500 to-stone-700',
+  peaceful: 'from-emerald-400 to-green-600',
+  curious: 'from-fuchsia-400 to-purple-600'
 };
 
 export function MovieSuggestions({ mood }: { mood: Mood }) {
