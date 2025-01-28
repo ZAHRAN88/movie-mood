@@ -2,7 +2,24 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 
 const genAI = new GoogleGenerativeAI("AIzaSyCx0UzKnv4w-k0bBhLeSZfjvOW7CM7qljk");
 
-const validMoods = ['happy', 'sad', 'excited', 'anxious', 'romantic', 'angry', 'nostalgic'] as const;
+const validMoods = ['happy', 
+  'sad', 
+  'excited', 
+  'anxious', 
+  'romantic', 
+  'angry', 
+  'nostalgic',
+  'inspired',
+  'adventurous',
+  'relaxed',
+  'mysterious',
+  'thoughtful',
+  'hopeful',
+  'melancholic',
+  'energetic',
+  'scared',
+  'peaceful',
+  'curious'] as const;
 
 export async function POST(req: Request) {
   try {
