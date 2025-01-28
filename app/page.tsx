@@ -8,7 +8,26 @@ import { Loader2, Film, Sparkles, PlayCircle, Heart, Star, X } from 'lucide-reac
 import { useToast } from "@/hooks/use-toast"
 import { Footer } from '@/components/Footer';
 
-const validMoods = ['happy', 'sad', 'excited', 'anxious', 'romantic', 'angry', 'nostalgic'] as const;
+const validMoods = [
+  'happy', 
+  'sad', 
+  'excited', 
+  'anxious', 
+  'romantic', 
+  'angry', 
+  'nostalgic',
+  'inspired',
+  'adventurous',
+  'relaxed',
+  'mysterious',
+  'thoughtful',
+  'hopeful',
+  'melancholic',
+  'energetic',
+  'scared',
+  'peaceful',
+  'curious'
+] as const;
 
 export default function Home() {
   const { toast } = useToast()
