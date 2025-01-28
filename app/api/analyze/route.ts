@@ -25,7 +25,7 @@ export async function POST(req: Request) {
   try {
     const { message } = await req.json();
     
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash-exp' });
     
     const prompt = `Analyze this feeling and respond ONLY and ONLYYYY with one of these moods: ${validMoods.join(', ')}. Feeling: ${message}`;
     
