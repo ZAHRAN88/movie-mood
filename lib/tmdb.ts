@@ -23,8 +23,8 @@ const moodToGenres: { [key: string]: number[] } = {
   
   export async function getMoviesByMood(mood: string) {
     const genreIds = moodToGenres[mood] || [];
-    // Generate a random page number between 1 and 5
-    const randomPage = Math.floor(Math.random() * 20) + 1;
+    // Generate a random page number between 1 and 8
+    const randomPage = Math.floor(Math.random() * 8) + 1;
     
     try {
       const response = await fetch(
