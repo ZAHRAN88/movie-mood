@@ -19,7 +19,9 @@ const validMoods = ['happy',
   'energetic',
   'scared',
   'peaceful',
-  'curious'] as const;
+  'curious',
+  'comedy'
+] as const;
 
 export async function POST(req: Request) {
   try {

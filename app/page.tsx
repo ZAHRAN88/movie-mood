@@ -27,6 +27,8 @@ const validMoods = [
   'scared',
   'peaceful',
   'curious'
+  ,
+  'comedy'
 ] as const;
 
 export default function Home() {

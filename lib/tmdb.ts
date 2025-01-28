@@ -1,5 +1,6 @@
 const moodToGenres: { [key: string]: number[] } = {
-    happy: [35, 16, 10751],    
+    happy: [ 16, 10751],
+    comedy:[35],    
     sad: [18, 10749],          
     excited: [28, 12, 878],   
     anxious: [53, 9648],       

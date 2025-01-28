@@ -23,7 +23,8 @@ export type Mood =
   | 'energetic'
   | 'scared'
   | 'peaceful'
-  | 'curious';
+  | 'curious'
+  | 'comedy';
 
 interface Movie {
   id: number;
@@ -53,7 +54,8 @@ const moodColors = {
   energetic: 'from-rose-400 to-pink-600',
   scared: 'from-stone-500 to-stone-700',
   peaceful: 'from-emerald-400 to-green-600',
-  curious: 'from-fuchsia-400 to-purple-600'
+  curious: 'from-fuchsia-400 to-purple-600',
+  comedy: 'from-fuchsia-100 to-purple-400',
 };
 
 export function MovieSuggestions({ mood }: { mood: Mood }) {
